@@ -11,18 +11,18 @@ class CLI
     puts "Initializing new CLI"
   end
 
-  def beef
-    puts "Are you a beefy steak? (y/n)"
-    answer = gets.chomp.downcase
-
-    if answer == "y"
-      puts "Welcome!"
-    elsif answer == "n"
-      puts "Oh no!"
-    else
-      puts "Whoa! That's not y OR n! Looks like you need some protein!"
-      return self.beef
-    end
-  end
+  # def beef
+  #   puts "Are you a beefy steak? (y/n)"
+  #   answer = gets.chomp.downcase
+  #
+  #   if answer == "y"
+  #     puts "Welcome!"
+  #   elsif answer == "n"
+  #     puts "Oh no!"
+  #   else
+  #     puts "Whoa! That's not y OR n! Looks like you need some protein!"
+  #     return self.beef
+  #   end
+  # end
   binding.pry
 end
