@@ -1,4 +1,5 @@
 # Ready to go!
+require 'faker'
 require 'bundler/setup'
 Bundler.require
 

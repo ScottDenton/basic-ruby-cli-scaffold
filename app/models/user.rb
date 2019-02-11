@@ -7,4 +7,13 @@ class User < ActiveRecord::Base
       #Stole the below line from the solution. Just couldnt figure it out
   has_many :trips, class_name: 'Reservation', foreign_key: 'guest_id'
 
+
+  def self.show_all_users
+    self.all.each{|user| puts user.name}
+  end
+
+  def self.find_user_by_name(name)
+      self.all.find{|user| user.name == name}
+  end
+
 end
