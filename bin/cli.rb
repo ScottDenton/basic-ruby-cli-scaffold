@@ -3,7 +3,7 @@
 #   class doesn't represent anything in your databse: it's
 #   here simply to encapsulate your CLI methods!
 
-# Pro-tip: think about how you might use class and instance 
+# Pro-tip: think about how you might use class and instance
 #   variables in a class like this!
 
 class CLI
@@ -24,4 +24,5 @@ class CLI
       return self.beef
     end
   end
+  binding.pry
 end
